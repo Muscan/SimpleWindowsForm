@@ -40,10 +40,10 @@ namespace WinFormsApp3
             this.txtEngine = new System.Windows.Forms.TextBox();
             this.txtCategorie = new System.Windows.Forms.TextBox();
             this.txtTraction = new System.Windows.Forms.TextBox();
-            this.txtPrice = new System.Windows.Forms.TextBox();
             this.btnDisplay = new System.Windows.Forms.Button();
             this.lblReset = new System.Windows.Forms.Button();
             this.lblDisplay = new System.Windows.Forms.Label();
+            this.txtPrice = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblCarName
@@ -54,16 +54,16 @@ namespace WinFormsApp3
             this.lblCarName.AutoSize = true;
             this.lblCarName.Location = new System.Drawing.Point(506, 43);
             this.lblCarName.Name = "lblCarName";
-            this.lblCarName.Size = new System.Drawing.Size(31, 20);
+            this.lblCarName.Size = new System.Drawing.Size(56, 20);
             this.lblCarName.TabIndex = 0;
-            this.lblCarName.Text = "Car";
+            this.lblCarName.Text = "Masina";
             this.lblCarName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblCarName.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblModel
             // 
             this.lblModel.AutoSize = true;
-            this.lblModel.Location = new System.Drawing.Point(438, 194);
+            this.lblModel.Location = new System.Drawing.Point(464, 131);
             this.lblModel.Name = "lblModel";
             this.lblModel.Size = new System.Drawing.Size(136, 20);
             this.lblModel.TabIndex = 1;
@@ -73,7 +73,7 @@ namespace WinFormsApp3
             // lblMotor
             // 
             this.lblMotor.AutoSize = true;
-            this.lblMotor.Location = new System.Drawing.Point(464, 314);
+            this.lblMotor.Location = new System.Drawing.Point(492, 274);
             this.lblMotor.Name = "lblMotor";
             this.lblMotor.Size = new System.Drawing.Size(82, 20);
             this.lblMotor.TabIndex = 2;
@@ -82,7 +82,7 @@ namespace WinFormsApp3
             // lblCategorie
             // 
             this.lblCategorie.AutoSize = true;
-            this.lblCategorie.Location = new System.Drawing.Point(438, 435);
+            this.lblCategorie.Location = new System.Drawing.Point(464, 396);
             this.lblCategorie.Name = "lblCategorie";
             this.lblCategorie.Size = new System.Drawing.Size(148, 20);
             this.lblCategorie.TabIndex = 3;
@@ -91,7 +91,7 @@ namespace WinFormsApp3
             // lblTraction
             // 
             this.lblTraction.AutoSize = true;
-            this.lblTraction.Location = new System.Drawing.Point(483, 541);
+            this.lblTraction.Location = new System.Drawing.Point(506, 503);
             this.lblTraction.Name = "lblTraction";
             this.lblTraction.Size = new System.Drawing.Size(69, 20);
             this.lblTraction.TabIndex = 4;
@@ -100,7 +100,7 @@ namespace WinFormsApp3
             // lblPret
             // 
             this.lblPret.AutoSize = true;
-            this.lblPret.Location = new System.Drawing.Point(502, 629);
+            this.lblPret.Location = new System.Drawing.Point(516, 588);
             this.lblPret.Name = "lblPret";
             this.lblPret.Size = new System.Drawing.Size(35, 20);
             this.lblPret.TabIndex = 5;
@@ -108,7 +108,7 @@ namespace WinFormsApp3
             // 
             // txtCar
             // 
-            this.txtCar.Location = new System.Drawing.Point(398, 89);
+            this.txtCar.Location = new System.Drawing.Point(423, 66);
             this.txtCar.Name = "txtCar";
             this.txtCar.Size = new System.Drawing.Size(235, 27);
             this.txtCar.TabIndex = 6;
@@ -116,42 +116,35 @@ namespace WinFormsApp3
             // 
             // txtModel
             // 
-            this.txtModel.Location = new System.Drawing.Point(398, 217);
+            this.txtModel.Location = new System.Drawing.Point(423, 196);
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(235, 27);
             this.txtModel.TabIndex = 7;
             // 
             // txtEngine
             // 
-            this.txtEngine.Location = new System.Drawing.Point(398, 337);
+            this.txtEngine.Location = new System.Drawing.Point(423, 318);
             this.txtEngine.Name = "txtEngine";
             this.txtEngine.Size = new System.Drawing.Size(235, 27);
             this.txtEngine.TabIndex = 8;
             // 
             // txtCategorie
             // 
-            this.txtCategorie.Location = new System.Drawing.Point(398, 458);
+            this.txtCategorie.Location = new System.Drawing.Point(423, 445);
             this.txtCategorie.Name = "txtCategorie";
             this.txtCategorie.Size = new System.Drawing.Size(235, 27);
             this.txtCategorie.TabIndex = 9;
             // 
             // txtTraction
             // 
-            this.txtTraction.Location = new System.Drawing.Point(398, 564);
+            this.txtTraction.Location = new System.Drawing.Point(423, 539);
             this.txtTraction.Name = "txtTraction";
             this.txtTraction.Size = new System.Drawing.Size(235, 27);
             this.txtTraction.TabIndex = 10;
             // 
-            // txtPrice
-            // 
-            this.txtPrice.Location = new System.Drawing.Point(398, 652);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(235, 27);
-            this.txtPrice.TabIndex = 11;
-            // 
             // btnDisplay
             // 
-            this.btnDisplay.Location = new System.Drawing.Point(372, 840);
+            this.btnDisplay.Location = new System.Drawing.Point(423, 840);
             this.btnDisplay.Name = "btnDisplay";
             this.btnDisplay.Size = new System.Drawing.Size(120, 41);
             this.btnDisplay.TabIndex = 12;
@@ -161,7 +154,7 @@ namespace WinFormsApp3
             // 
             // lblReset
             // 
-            this.lblReset.Location = new System.Drawing.Point(539, 840);
+            this.lblReset.Location = new System.Drawing.Point(554, 840);
             this.lblReset.Name = "lblReset";
             this.lblReset.Size = new System.Drawing.Size(104, 41);
             this.lblReset.TabIndex = 13;
@@ -172,13 +165,20 @@ namespace WinFormsApp3
             // lblDisplay
             // 
             this.lblDisplay.AutoSize = true;
-            this.lblDisplay.Location = new System.Drawing.Point(437, 682);
+            this.lblDisplay.Location = new System.Drawing.Point(463, 659);
             this.lblDisplay.Name = "lblDisplay";
             this.lblDisplay.Size = new System.Drawing.Size(137, 20);
             this.lblDisplay.TabIndex = 14;
             this.lblDisplay.Text = "Afisare Configurare";
             this.lblDisplay.Visible = false;
             this.lblDisplay.Click += new System.EventHandler(this.lblDisplay_Click);
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Location = new System.Drawing.Point(423, 629);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(235, 27);
+            this.txtPrice.TabIndex = 11;
             // 
             // Form1
             // 
@@ -221,10 +221,10 @@ namespace WinFormsApp3
         private System.Windows.Forms.TextBox txtEngine;
         private System.Windows.Forms.TextBox txtCategorie;
         private System.Windows.Forms.TextBox txtTraction;
-        private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Button btnDisplay;
         private System.Windows.Forms.Button lblReset;
         private System.Windows.Forms.Label lblDisplay;
+        private System.Windows.Forms.TextBox txtPrice;
     }
 }
 
